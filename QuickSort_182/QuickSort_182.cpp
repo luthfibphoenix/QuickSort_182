@@ -43,30 +43,30 @@ void swap(int x, int y)
 void q_short(int low, int high)
 {
     int pivot, i, j;
-    if (low > high)                                                 // Langkah algoritma No. 1
+    if (low > high)                                                         // Langkah algoritma No. 1
         return;
 
    // Partition the list into two parts:
    // One containing element less that or equal to privat
    // Outher containing elements greater than pivot
-    i = low + 1;                                                    // Langkah algoritma No. 3
-    j = high;                                                       // Langkah algoritma No. 4
-    pivot = arr[low];                                               // Langkah algoritma No. 2
+    i = low + 1;                                                            // Langkah algoritma No. 3
+    j = high;                                                               // Langkah algoritma No. 4
+    pivot = arr[low];                                                       // Langkah algoritma No. 2
 
-    while (i <= j)                                                  // Langkah algoritma No. 10
+    while (i <= j)                                                          // Langkah algoritma No. 10
     {
         // search for an element greather than pivot
-        while ((arr[i] <= pivot) && (i <= high))                    // Langkah algoritma No. 5
+        while ((arr[i] <= pivot) && (i <= high))                            // Langkah algoritma No. 5
         {
-            i++;                                                    // Langkah algoritma No. 6
+            i++;                                                            // Langkah algoritma No. 6
             cmp_count++;
         }
         cmp_count++;
 
         // search for an element less than or equal to pivot
-        while ((arr[j] > pivot) && (j >= low))                       // Langkah algoritma No. 7
+        while ((arr[j] > pivot) && (j >= low))                              // Langkah algoritma No. 7
         {
-            j--;                                                     // Langkah algoritma No. 8
+            j--;                                                            // Langkah algoritma No. 8
             cmp_count++;
         }
         cmp_count++;
